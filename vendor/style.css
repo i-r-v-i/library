@@ -1,0 +1,101 @@
+:root {
+  --text-color: #fff;
+  --font-family_1: Inter;
+  --font-family_2: Forum;
+}
+
+body {
+  background-color: gray;
+}
+
+.container {
+  width: 1440px;
+
+  margin: auto;
+  height: 100vh;
+}
+
+.header {
+  background: #0c0c0e;
+  padding: 0 20px;
+  width: 100%;
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+.library-name {
+  font-family: var(--font-family_2);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+}
+.navList {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  font-family: var(--font-family_1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  margin-right: 40px;
+  padding: 0;
+  justify-self: end;
+}
+
+.icon-profile {
+  background-image: url("../assets/svg/icon_profile.svg");
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 28px;
+}
+
+.welcome {
+  position: relative;
+}
+.overlay {
+  background-image: url("../assets/img/books.png");
+  width: 100%;
+  height: 600px;
+}
+.overlay::before {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    #0c0c0e 0%,
+    #0c0c0e 0.01%,
+    rgba(18, 18, 21, 0.1) 100%
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.title {
+  position: absolute;
+  top: 255px;
+  left: 0;
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--font-family_2);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 520px;
+  flex-shrink: 0;
+  z-index: 5;
+  margin: 0;
+  padding: 35px 40px;
+  background-color: black;
+}
