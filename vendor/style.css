@@ -99,3 +99,12 @@ body {
   padding: 35px 40px;
   background-color: black;
 }
+
+.link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: orange;
+}
