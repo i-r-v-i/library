@@ -23,7 +23,7 @@ body {
   box-sizing: border-box;
 }
 
-.library-name {
+.logo-text {
   font-family: var(--font-family_2);
   font-size: 30px;
   font-style: normal;
@@ -50,6 +50,9 @@ body {
   margin-right: 40px;
   padding: 0;
   justify-self: end;
+}
+.navList__item {
+    cursor: pointer;
 }
 
 .icon-profile {
@@ -98,13 +101,14 @@ body {
   margin: 0;
   padding: 35px 40px;
   background-color: black;
+
 }
 
 .link {
-  color: var(--text-color);
-  text-decoration: none;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .link:hover {
-  color: orange;
+    color: orange;
 }
