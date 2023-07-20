@@ -10,9 +10,9 @@ body {
 
 .container {
   width: 1440px;
-
+  background-color: #fff;
   margin: auto;
-  height: 100vh;
+  height: 100%;
 }
 
 .header {
