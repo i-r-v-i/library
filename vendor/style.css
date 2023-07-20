@@ -112,3 +112,7 @@ body {
 .link:hover {
     color: orange;
 }
+
+.section-container {
+  padding: 20px 20px 0;
+}
