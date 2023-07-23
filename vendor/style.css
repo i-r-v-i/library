@@ -159,7 +159,7 @@ margin: 0;
 }
 
 .carousel-list {
-  margin-top: 20px;
+  margin: 20px 0 0;
   padding: 0;
   display: flex;
   gap: 25px;
@@ -179,4 +179,27 @@ margin: 0;
 }
 .carousel-item:nth-child(3) {
   background-image: url('../assets/img/shelves.png');
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  
+}
+.button-container {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-button {
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  border-radius: 50%;
+  border: none;
+}
+.pagination-button_actinve {
+  background: #bb945f;
 }
