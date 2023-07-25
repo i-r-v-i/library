@@ -203,3 +203,58 @@ margin: 0;
 .pagination-button_actinve {
   background: #bb945f;
 }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.menu-card__title {
+    color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+.menu-card-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 60px;
+  align-items: center;
+}
+
+.menu-card-item__name {
+  font-family: Inter;
+  margin: 0;
+  
+  
+}
+.menu-card-item__name_right {
+    justify-self: end;
+}
+
+.menu-card-item__price {
+  font-family: Forum;
+}
+
+.menu-card-item__line {
+    width: 100px;
+    
+    height: 1px;
+    background: #BB945F;
+    
+}
