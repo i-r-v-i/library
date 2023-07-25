@@ -378,3 +378,56 @@ body {
   margin: 20px 0 0;
   box-sizing: border-box;
 }
+
+.reader-block {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  width: 456px;
+  align-items: end;
+}
+
+.reader-block__title {
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.reader-blok__text {
+  margin: 0;
+  color: #000;
+  text-align: right;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 0.4px;
+}
+.profile-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-button {
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  background-color: #fff;
+  width: 75px;
+  padding: 10px;
+  box-sizing: border-box;
+}
