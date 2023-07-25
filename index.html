@@ -19,15 +19,15 @@
         <div class="nav">
           <h1 class="logo-text">Brooklyn Public Library</h1>
           <ul class="navList">
-            <li class="navList-item"><a class="link" href="#about">About</a></li>
-            <li class="navList-item"><a class="link" href="#favorites">Favorites</a></li>
-            <li class="navList-item">
+            <li class="navList__item"><a class="link" href="#about">About</a></li>
+            <li class="navList__item"><a class="link" href="#favorites">Favorites</a></li>
+            <li class="navList__item">
               <a class="link" href="#coffee-shop">Coffee shop</a>
             </li>
-            <li class="navList-item">
+            <li class="navList__item">
               <a class="link" href="#our-contacts">Contacts</a>
             </li>
-            <li class="navList-item">
+            <li class="navList__item">
               <a class="link" href="#digital-library-cards">Library Card</a>
             </li>
           </ul>
@@ -44,24 +44,30 @@
         <section class="about section-container" id="#about">
           <h2 class="section-title">About</h2>
           <div class="carousel-container">
-          <p class="section-text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
-        <ul class="carousel-list">
-          <li class="carousel-item"></li>
-          <li class="carousel-item"></li>
-          <li class="carousel-item"></li>
-        </ul>
-        </div>
-        <div class="pagination">
-          <div class="button-container">
-            <button type="button" class="pagination-button pagination-button_actinve"></button>
+            <p class="section-text">
+              The Brooklyn Library is a free workspace, a large number of books and a cozy
+              coffee shop inside
+            </p>
+            <ul class="carousel-list">
+              <li class="carousel-item"></li>
+              <li class="carousel-item"></li>
+              <li class="carousel-item"></li>
+            </ul>
           </div>
-          <div class="button-container">
-            <button type="button" class="pagination-button"></button>
+          <div class="pagination">
+            <div class="button-container">
+              <button
+                type="button"
+                class="pagination-button pagination-button_actinve"
+              ></button>
+            </div>
+            <div class="button-container">
+              <button type="button" class="pagination-button"></button>
+            </div>
+            <div class="button-container">
+              <button type="button" class="pagination-button"></button>
+            </div>
           </div>
-          <div class="button-container">
-            <button type="button" class="pagination-button"></button>
-          </div>
-        </div>
         </section>
         <section class="favorites section-container" id="#favorites">
           <h2 class="section-title">Favorites</h2>
@@ -74,7 +80,7 @@
             read in coffee shop. Our barista to cook you best coffee, and also you can try
             desserts from bakery.
           </p>
-          <div class="menu">
+          <div class="wrapper-between">
             <article class="menu-card">
               <h3 class="menu-card__title">Coffee & Tea</h3>
               <div class="menu-card-item">
@@ -83,7 +89,7 @@
                 <p class="menu-card-item__price">$3</p>
               </div>
               <div class="menu-card-item">
-                <p class="menu-card-item__name ">French Press Pot</p>
+                <p class="menu-card-item__name">French Press Pot</p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$5</p>
               </div>
@@ -111,7 +117,9 @@
             <article class="menu-card">
               <h3 class="menu-card__title">Desserts & Cakes</h3>
               <div class="menu-card-item">
-                <p class="menu-card-item__name menu-card-item__name_right">Forest Gateau</p>
+                <p class="menu-card-item__name menu-card-item__name_right">
+                  Forest Gateau
+                </p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$16</p>
               </div>
@@ -121,49 +129,65 @@
                 <p class="menu-card-item__price">$16</p>
               </div>
               <div class="menu-card-item">
-                <p class="menu-card-item__name menu-card-item__name_right">Truffle Cake</p>
+                <p class="menu-card-item__name menu-card-item__name_right">
+                  Truffle Cake
+                </p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$15</p>
               </div>
               <div class="menu-card-item">
-                <p class="menu-card-item__name menu-card-item__name_right">Chocolate Cake</p>
+                <p class="menu-card-item__name menu-card-item__name_right">
+                  Chocolate Cake
+                </p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$18</p>
               </div>
               <div class="menu-card-item">
-                <p class="menu-card-item__name menu-card-item__name_right">Poet’s Dream Cake</p>
+                <p class="menu-card-item__name menu-card-item__name_right">
+                  Poet’s Dream Cake
+                </p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$16</p>
               </div>
               <div class="menu-card-item">
-                <p class="menu-card-item__name menu-card-item__name_right">Pineapple Cake</p>
+                <p class="menu-card-item__name menu-card-item__name_right">
+                  Pineapple Cake
+                </p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$14</p>
               </div>
             </article>
-            
           </div>
         </section>
         <section class="contacts section-container" id="#our-contacts">
           <h2 class="section-title">Our Contacts</h2>
-          <div class="contacts__container">
-          <div class="contacts-block">
-            <h3 class="contacts__title">For all Library inquiries:</h3>
-            <div class="contacts__text">
-              <p class="contacts__item">Please call (617) 730-2370</p>
-              <p class="contacts__item">For TTY service, please call&nbsp;(617)&nbsp;730&nbsp;-&nbsp;2370</p>
-              <p class="contacts__item">Putterham Library: (617) 730-2385</p>
+          <div class="wrapper-between">
+            <div class="contacts-block">
+              <h3 class="contacts__title">For all Library inquiries:</h3>
+              <div class="contacts__text">
+                <p class="contacts__item">Please call (617) 730-2370</p>
+                <p class="contacts__item">
+                  For TTY service, please call&nbsp;(617)&nbsp;730&nbsp;-&nbsp;2370
+                </p>
+                <p class="contacts__item">Putterham Library: (617) 730-2385</p>
+              </div>
+              <div class="contacts__text">
+                <h3 class="contacts__title">Senior Staff</h3>
+                <p class="contacts__item">Library Director: <b>Amanda Hirst</b></p>
+              </div>
             </div>
-            <div class="contacts__text">
-            <h3 class="contacts__title">Senior Staff</h3>
-            <p class="contacts__item">Library Director: <b>Amanda Hirst</b></p>
+            <div class="map"></div>
           </div>
-          </div>
-          <div class="map"></div>
-        </div>
         </section>
-        <section class="digital-library-cards section-container" id="#digital-library-cards">
+        <section
+          class="digital-library-cards section-container"
+          id="#digital-library-cards"
+        >
           <h2 class="section-title">Digital Library Cards</h2>
+          <div class="wrapper-between">
+            <div class="form-block"></div>
+            <div class="reader-block"></div>
+          </div>
         </section>
       </main>
       <footer class="footer"></footer>
