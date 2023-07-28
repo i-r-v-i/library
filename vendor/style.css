@@ -116,7 +116,6 @@ body {
   padding: 20px 20px 40px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   gap: 40px;
 }
 
@@ -126,10 +125,10 @@ body {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 100% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  margin: 0;
+  margin: 0 0 20px;
   position: relative;
   text-align: center;
   justify-content: center;
@@ -203,6 +202,172 @@ body {
   background: #bb945f;
 }
 
+.favorites-text {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  text-align: left;
+}
+.radio-group {
+  padding: 5px;
+  cursor: pointer;
+}
+.radio-buttons {
+  list-style-type: lower-roman;
+  display: flex;
+  gap: 80px;
+}
+
+.radio-button {
+  margin-right: 20px;
+  width: 17px;
+  height: 17px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.radio-label {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.radio-button:checked ~ .radio-label {
+    font-weight: 700;
+}
+.season-container {
+  display: grid;
+  grid-template-columns: repeat(2, 550px);
+  grid-template-rows: repeat(2, auto);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  justify-content: space-between;
+  row-gap: 40px
+}
+
+.staff-picks {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.staff-picks::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 55px;
+  width: 60px;
+  height: 1px;
+  background: #bb945f;
+  
+}
+.book {
+  width: 550px;
+  border: 1px solid #000;
+  padding: 15px 0 15px 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.book:nth-child(2n){
+   
+   right: 40px;
+  }
+.book__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 15px;
+ 
+}
+.book__about {
+  width: 168px;
+  text-transform: capitalize;
+  margin: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.book__about span {
+  text-transform: uppercase;
+}
+.book__description {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 0;
+  width: 355px;
+}
+.buy-button {
+  width: 75px;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  min-height: 30px;
+  background-color: #fff;
+}
+.buy-button_active {
+  border: 1px solid #BB945F;
+  color: #BB945F;
+}
+.book__foto {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  bottom:0;
+  right: -40px;
+}
+
+.book__foto_dean {
+    background-image: url("../assets/img/dean.png");
+  }
+  
+  .book__foto_dante {
+    background-image: url("../assets/img/dante.png");
+  }
+  .book__foto_harrison {
+    background-image: url("../assets/img/cackle.png");
+  }
+  .book__foto_irving {
+    background-image: url("../assets/img/irving.png");
+  }
 .menu-card {
   display: flex;
   flex-direction: column;
@@ -270,7 +435,7 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
   margin: 0;
@@ -370,9 +535,7 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
-  /* display: inline-flex; */
   padding: 10px 40px;
-  /* align-items: flex-end; */
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   margin: 20px 0 0;
@@ -407,7 +570,7 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px; 
   letter-spacing: 0.4px;
 }
 .profile-buttons {
@@ -503,4 +666,21 @@ body {
 .weekends {
   grid-row: 2;
   grid-column: 2;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  padding: 44px 0;
+}
+.copyright__item {
+  padding: 0;
+  margin: 0;
 }

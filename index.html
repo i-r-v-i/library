@@ -69,8 +69,72 @@
             </div>
           </div>
         </section>
-        <section class="favorites section-container" id="#favorites">
+        <section class="favorites section-container" id="favorites">
           <h2 class="section-title">Favorites</h2>
+          <p class="favorites-text">Pick favorites of season</p>
+          <div class="radio-buttons">
+            <div class='radio-group'>
+              <input class="radio-button" type="radio" id="winter" name="season" value="winter" checked>
+              <label class='radio-label' for="winter">Winter</label>
+            </div>
+            <div class='radio-group'>
+              <input class="radio-button" type="radio" id="spring" name="season" value="spring">
+              <label class='radio-label' for="spring">Spring</label>
+            </div>
+            <div class='radio-group'>
+              <input class="radio-button" type="radio" id="summer" name="season" value="summer">
+              <label class='radio-label' for="summer">Summer</label>
+            </div>
+            <div class='radio-group'>
+              <input class="radio-button" type="radio" id="autum" name="season" value="autum">
+              <label class='radio-label' for="autum">Autum</label>
+            </div>
+          </div>
+          <ul class="season-container">
+            <li class="book">
+                <div class="book__text">
+                  <p class="staff-picks">Staff Picks</p>
+                  <p class="book__about"><span>The&nbsp;Book&nbsp;Eaters</span>
+                    By&nbsp;Sunyi&nbsp;Dean</p>
+                  <p class="book__description">An unusual sci-fi story about a book eater woman who tries desperately to
+                    save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family
+                    values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart. </p>
+                </div>
+                <button class="buy-button">Buy</button>
+              <div class="book__foto book__foto_dean"></div>
+            </li>
+            <li class="book">
+              <div class="book__text">
+                <p class="staff-picks">Staff Picks</p>
+                <p class="book__about"><span>Cackle</span>
+                  By&nbsp;Rachel&nbsp;Harrison</p>
+                <p class="book__description">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
+              </div>
+              <button class="buy-button">Buy</button>
+            <div class="book__foto book__foto_harrison"></div>
+          </li>
+          <li class="book">
+            <div class="book__text">
+              <p class="staff-picks">Staff Picks</p>
+              <p class="book__about"><span>The&nbsp;Book&nbsp;Eaters</span>
+                By&nbsp;Erich&nbsp;Auerbach</p>Dante:&nbsp;Poet&nbsp;of&nbsp;the&nbsp;Secular&nbsp;World
+              <p class="book__description">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+            </div>
+            <button class="buy-button">Buy</button>
+          <div class="book__foto book__foto_dante"></div>
+        </li>
+        <li class="book">
+          <div class="book__text">
+            <p class="staff-picks">Staff Picks</p>
+            <p class="book__about"><span>The&nbsp;Last&nbsp;Queen</span>
+              By&nbsp;Clive&nbsp;Irving</p>
+            <p class="book__description">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+          </div>
+          <button class="buy-button buy-button_active">Own</button>
+        <div class="book__foto book__foto_irving"></div>
+      </li>
+  
+          </ul>
         </section>
         <section class="coffee-shop section-container" id="#coffee-shop">
           <h2 class="section-title">Coffee shop</h2>
@@ -215,9 +279,9 @@
             286 Cadman Plaza, New York, NY&nbsp;11238, United States
           </address>
           <ul class="network-list">
-            <li class="network-item"></li>
-            <li class="network-item"></li>
-            <li class="network-item"></li>
+            <li class="network-item"><a class="link net-link" href="" target="_blank"></a></li>
+            <li class="network-item"><a class="link net-link" href="" target="_blank"></a></li>
+            <li class="network-item"><a class="link net-link" href="" target="_blank"></a></li>
           </ul>
           <p class="week weekday">
             Mon&nbsp;- Fri 08:00&nbsp;am&nbsp;-&nbsp;07:00&nbsp;pm
@@ -227,7 +291,11 @@
           </p>
         </div>
         <div class="footer-line"></div>
-        <div class="copyright"></div>
+        <div class="copyright">
+          <p class="copyright__item">2023</p>
+          <p class="copyright__item"><a href="https://app.rs.school/login" class="link" target="_blank">The Rolling Scopes School</a></p>
+          <p class="copyright__item"><a href="https://github.com/IrinaVinit" class="link" target="_blank">Irina Vinitskaia</a></p>
+        </div>
       </footer>
     </div>
   </body>
