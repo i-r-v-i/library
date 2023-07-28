@@ -343,7 +343,10 @@ body {
   min-height: 30px;
   background-color: #fff;
 }
-
+.buy-button_active {
+  border: 1px solid #BB945F;
+  color: #BB945F;
+}
 .book__foto {
   position: absolute;
   width: 200px;
