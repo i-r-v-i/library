@@ -284,10 +284,12 @@ body {
   padding: 15px 0 15px 20px;
   box-sizing: border-box;
   position: relative;
-  /* display: block; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .book:nth-child(2n){
-   position: relative;
+   
    right: 40px;
   }
 .book__text {
