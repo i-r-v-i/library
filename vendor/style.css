@@ -113,10 +113,15 @@ body {
 .link {
   color: var(--text-color);
   text-decoration: none;
+  transition: .5s;
+}
+.color2 {
+    color: black;
 }
 
 .link:hover {
   color: orange;
+  text-decoration: underline;
 }
 
 .section-container {
@@ -209,7 +214,7 @@ body {
   border-radius: 50%;
   border: none;
 }
-.pagination-button_actinve {
+.pagination-button_active {
   background: #bb945f;
 }
 
@@ -306,7 +311,9 @@ body {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
-
+.mail {
+    text-transform: none;
+}
 .map {
   background-image: url("../assets/img/map.png");
   width: 696px;
@@ -467,7 +474,13 @@ body {
   line-height: 20px;
   margin-bottom: 30px;
 }
-
+.button {
+    transition: .5s;
+}
+.button:hover {
+    border: 1px solid #BB945F;
+    background: #BB945F;
+}
 .address {
   width: 229px;
   grid-column: 1 / 2;
@@ -519,9 +532,7 @@ body {
 .copyright {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /*  */
   color: #fff;
-  /* text-align: center; */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
