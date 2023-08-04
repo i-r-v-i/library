@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
   height: 100%;
   background-color: #fff;
@@ -25,6 +25,9 @@ body {
   width: 100%;
   color: var(--text-color);
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }
 
 .logo-text {
@@ -39,7 +42,7 @@ body {
 }
 .nav {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 .navList {
