@@ -273,6 +273,25 @@ body {
 .carousel-item:nth-child(3) {
   background-image: url("../assets/img/shelves.png");
 }
+.carousel-item:nth-child(4) {
+  background-image: url("../assets/img/stairs.png");
+  display: none;
+}
+.carousel-item:nth-child(5) {
+  background-image: url("../assets/img/portico.png");
+  display: none;
+}
+@media screen and (max-width: 1140px) {
+  .carousel-item:nth-child(3)  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .carousel-item:nth-child(2)  {
+    display: none;
+  }
+}
 
 .pagination {
   display: flex;
@@ -282,8 +301,20 @@ body {
   width: 26px;
   height: 26px;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
+}
+.button-container:nth-child(4), .button-container:nth-child(5) {
+  display: none;
+}
+@media screen and (max-width: 1140px) {
+  .button-container:nth-child(4)  {
+    display: flex;
+  }
+}
+@media screen and (max-width: 820px) {
+  .button-container:nth-child(5)  {
+    display: flex;
+  }
 }
 .pagination-button {
   width: 16px;
