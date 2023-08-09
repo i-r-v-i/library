@@ -65,6 +65,14 @@ body {
   justify-self: end;
 }
 
+@media screen and (max-width: 1140px) {
+  .navList {
+    flex-direction: column;
+    row-gap: 30px;
+    margin: 90px 0 0 0;
+    align-items: center;
+  }
+}
 .navList__item {
   cursor: pointer;
 }
@@ -74,6 +82,7 @@ body {
   background-repeat: no-repeat;
   width: 28px;
   height: 28px;
+  z-index: 3;
 }
 
 @media screen and (max-width: 1140px) {
@@ -90,6 +99,7 @@ body {
   width: 45px;
   height: 20px;
   color: white;
+  cursor: pointer;
 }
 
 .burger span {
@@ -105,22 +115,35 @@ body {
   height: 2px;
   width: 100%;
   background-color: #fff;
-  transition: all 0.3% ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.burger.active span {
+  transform: scale(0);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 70%);
+}
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -70%);
 }
 
 @media screen and (max-width: 1140px) {
   .burger {
- display: flex;
+    display: flex;
   }
 }
 
 .burger::before {
-  top: 0
+  top: 0;
 }
 
 .burger::after {
   bottom: 0;
 }
+
 .welcome {
   position: relative;
 }
