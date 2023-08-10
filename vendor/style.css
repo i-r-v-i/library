@@ -576,6 +576,11 @@ body {
   line-height: 40px;
   letter-spacing: 0.4px;
 }
+@media screen and (max-width: 1180px) {
+  .reader-blok__text {
+    text-align: center;
+  }
+}
 .profile-buttons {
   display: flex;
   gap: 20px;
