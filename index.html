@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/img/favicon-32x32.png">
-    <link rel="stylesheet" href="./vendor/normalize.css">
-    <link rel="stylesheet" href="./vendor/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/favicon-32x32.png" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./vendor/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Forum&family=Inter"
-    >
+    />
     <title>Library</title>
   </head>
   <body class="body">
     <div class="container">
       <header class="header">
         <h1 class="logo-text">Brooklyn Public Library</h1>
-        <nav class="nav">
-          <ul class="navList">
-            <li class="navList__item"><a class="link" href="#about">About</a></li>
-            <li class="navList__item"><a class="link" href="#favorites">Favorites</a></li>
-            <li class="navList__item">
-              <a class="link" href="#coffee-shop">Coffee shop</a>
-            </li>
-            <li class="navList__item">
-              <a class="link" href="#our-contacts">Contacts</a>
-            </li>
-            <li class="navList__item">
-              <a class="link" href="#digital-library-cards">Library Card</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="icon-profile"></div>
-        <div class="burger">
-          <span></span>
+        <div class="menu-open">
+          <nav class="nav">
+            <ul class="navList">
+              <li class="navList__item">
+                <a class="link menu-link" href="#about">About</a>
+              </li>
+              <li class="navList__item">
+                <a class="link menu-link" href="#favorites">Favorites</a>
+              </li>
+              <li class="navList__item">
+                <a class="link menu-link" href="#coffee-shop">Coffee shop</a>
+              </li>
+              <li class="navList__item">
+                <a class="link menu-link" href="#our-contacts">Contacts</a>
+              </li>
+              <li class="navList__item">
+                <a class="link menu-link" href="#digital-library-cards">Library Card</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="icon-profile"></div>
+          <div class="burger">
+            <span></span>
+          </div>
         </div>
       </header>
 
@@ -48,18 +54,22 @@
         </section>
         <section class="about section-container" id="about">
           <h2 class="section-title">About</h2>
-          <div class="carousel-container">
+          <div class="about-container">
             <p class="section-text">
               The Brooklyn Library is a free workspace, a large number of books and a cozy
               coffee shop inside
             </p>
-            <ul class="carousel-list">
-              <li class="carousel-item"></li>
-              <li class="carousel-item"></li>
-              <li class="carousel-item"></li>
-              <li class="carousel-item"></li>
-              <li class="carousel-item"></li>
-            </ul>
+            <div class="carousel-cont">
+              <button class="carousel-button carousel-button_left "></button>
+              <ul class="carousel-list">
+                <li class="carousel-item"></li>
+                <li class="carousel-item"></li>
+                <li class="carousel-item"></li>
+                <li class="carousel-item"></li>
+                <li class="carousel-item"></li>
+              </ul>
+              <button class="carousel-button carousel-button_right"></button>
+            </div>
           </div>
           <div class="pagination">
             <div class="button-container">
@@ -95,7 +105,7 @@
                 name="season"
                 value="winter"
                 checked
-              >
+              />
               <label class="radio-label" for="winter">Winter</label>
             </div>
             <div class="radio-group">
@@ -105,7 +115,7 @@
                 id="spring"
                 name="season"
                 value="spring"
-              >
+              />
               <label class="radio-label" for="spring">Spring</label>
             </div>
             <div class="radio-group">
@@ -115,7 +125,7 @@
                 id="summer"
                 name="season"
                 value="summer"
-              >
+              />
               <label class="radio-label" for="summer">Summer</label>
             </div>
             <div class="radio-group">
@@ -125,7 +135,7 @@
                 id="autumn"
                 name="season"
                 value="autumn"
-              >
+              />
               <label class="radio-label" for="autumn">Autumn</label>
             </div>
           </div>
@@ -150,8 +160,8 @@
               <div class="book__text">
                 <p class="staff-picks">Staff Picks</p>
                 <p class="book__about">
-                  Cackle<span>By&nbsp;Rachel&nbsp;Harrison
-                </span></p>
+                  Cackle<span>By&nbsp;Rachel&nbsp;Harrison </span>
+                </p>
                 <p class="book__description">
                   Are your Halloween movies of choice The Witches of Eastwick and
                   Practical Magic? Look no further than here - where a woman recovering
@@ -166,7 +176,7 @@
               <div class="book__text">
                 <p class="staff-picks">Staff Picks</p>
                 <p class="book__about">
-                Dante: Poet of the Secular World<span>By&nbsp;Erich&nbsp;Auerbach</span>
+                  Dante: Poet of the Secular World<span>By&nbsp;Erich&nbsp;Auerbach</span>
                 </p>
                 <p class="book__description">
                   Auerbach's engaging book places the 'Comedy' within the tradition of
@@ -182,7 +192,7 @@
               <div class="book__text">
                 <p class="staff-picks">Staff Picks</p>
                 <p class="book__about">
-                 The&nbsp;Last&nbsp;Queen<span>By&nbsp;Clive&nbsp;Irving</span>
+                  The&nbsp;Last&nbsp;Queen<span>By&nbsp;Clive&nbsp;Irving</span>
                 </p>
                 <p class="book__description">
                   A timely and revelatory new biography of Queen Elizabeth (and her
@@ -198,8 +208,12 @@
         <section class="coffee-shop section-container" id="coffee-shop">
           <h2 class="section-title">Coffee shop</h2>
           <p class="section-text section-text_coffee-shop">
-            In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
-            <span>You can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</span>
+            In our library, we have of cozy coffee shop, welcoming in customers with
+            frothy cappuccinos and friendly conversation.
+            <span
+              >You can get a favorite book and read in coffee shop. Our barista to cook
+              you best coffee, and also you can try desserts from bakery.</span
+            >
           </p>
           <div class="wrapper-between wrapper-column">
             <article class="menu-card">
@@ -237,43 +251,33 @@
             </article>
             <article class="menu-card right">
               <h3 class="menu-card__title right">Desserts & Cakes</h3>
-              <div class="menu-card-item menu-card-item_right ">
-                <p class="menu-card-item__name right">
-                  Forest Gateau
-                </p>
+              <div class="menu-card-item menu-card-item_right">
+                <p class="menu-card-item__name right">Forest Gateau</p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$16</p>
               </div>
-              <div class="menu-card-item menu-card-item_right ">
+              <div class="menu-card-item menu-card-item_right">
                 <p class="menu-card-item__name right">Blue Moon</p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$16</p>
               </div>
-              <div class="menu-card-item menu-card-item_right ">
-                <p class="menu-card-item__name right">
-                  Truffle Cake
-                </p>
+              <div class="menu-card-item menu-card-item_right">
+                <p class="menu-card-item__name right">Truffle Cake</p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$15</p>
               </div>
-              <div class="menu-card-item menu-card-item_right ">
-                <p class="menu-card-item__name right">
-                  Chocolate Cake
-                </p>
+              <div class="menu-card-item menu-card-item_right">
+                <p class="menu-card-item__name right">Chocolate Cake</p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$18</p>
               </div>
-              <div class="menu-card-item menu-card-item_right ">
-                <p class="menu-card-item__name right">
-                  Poet’s Dream Cake
-                </p>
+              <div class="menu-card-item menu-card-item_right">
+                <p class="menu-card-item__name right">Poet’s Dream Cake</p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$16</p>
               </div>
-              <div class="menu-card-item menu-card-item_right ">
-                <p class="menu-card-item__name right">
-                  Pineapple Cake
-                </p>
+              <div class="menu-card-item menu-card-item_right">
+                <p class="menu-card-item__name right">Pineapple Cake</p>
                 <div class="menu-card-item__line"></div>
                 <p class="menu-card-item__price">$14</p>
               </div>
@@ -286,16 +290,34 @@
             <div class="contacts-block">
               <h3 class="contacts__title">For all Library inquiries:</h3>
               <div class="contacts__text">
-                <p class="contacts__item">Please call <a href="tel:6177302370" class="link color2">(617) 730&nbsp;-&nbsp;2370</a></p>
                 <p class="contacts__item">
-                  For TTY service, please call <a href="tel:6177302370" class="link color2">(617)&nbsp;730&nbsp;-&nbsp;2370</a>
+                  Please call
+                  <a href="tel:6177302370" class="link color2"
+                    >(617) 730&nbsp;-&nbsp;2370</a
+                  >
                 </p>
-                <p class="contacts__item">Putterham Library:<a href="tel:6177302385" class="link color2"> (617) 730-2385</a>                 
-                 </p>
+                <p class="contacts__item">
+                  For TTY service, please call
+                  <a href="tel:6177302370" class="link color2"
+                    >(617)&nbsp;730&nbsp;-&nbsp;2370</a
+                  >
+                </p>
+                <p class="contacts__item">
+                  Putterham Library:<a href="tel:6177302385" class="link color2">
+                    (617) 730-2385</a
+                  >
+                </p>
               </div>
               <div class="contacts__text">
                 <h3 class="contacts__title">Senior Staff</h3>
-                <p class="contacts__item mail">Library Director: <b><a href="mailto:Amandahirst@gmail.com" class="link color2">Amanda Hirst</a></b></p>
+                <p class="contacts__item mail">
+                  Library Director:
+                  <b
+                    ><a href="mailto:Amandahirst@gmail.com" class="link color2"
+                      >Amanda Hirst</a
+                    ></b
+                  >
+                </p>
               </div>
             </div>
             <div class="map"></div>
@@ -306,28 +328,28 @@
           id="digital-library-cards"
         >
           <h2 class="section-title">Digital Library Cards</h2>
-          <div class="wrapper-between">
+          <div class="wrapper-between wrapper-between_column">
             <div class="form-block">
               <h3 class="form-title">Find your Library card</h3>
               <div class="form-border">
                 <form class="form">
                   <div class="form-background">
-                  <h3 class="logo-text logo-black">Brooklyn Public Library</h3>
-                  <div class="input-list">
-                    <input
-                      type="text"
-                      class="input input_name"
-                      name="userName"
-                      placeholder="Reader's name "
-                    >
-                    <input
-                      type="number"
-                      class="input user-number"
-                      name="userNumber"
-                      placeholder="Card number"
-                    >
+                    <h3 class="logo-text logo-black">Brooklyn Public Library</h3>
+                    <div class="input-list">
+                      <input
+                        type="text"
+                        class="input input_name"
+                        name="userName"
+                        placeholder="Reader's name "
+                      />
+                      <input
+                        type="number"
+                        class="input user-number"
+                        name="userNumber"
+                        placeholder="Card number"
+                      />
+                    </div>
                   </div>
-                </div>
                   <button type="submit" class="button find-button">Check the card</button>
                 </form>
               </div>
