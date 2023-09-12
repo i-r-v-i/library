@@ -37,20 +37,21 @@
             </ul>
           </nav>
           <div class="icon-profile">
-            <div class="drop-menu drop-menu_login">
+            <p class="icon-profile__text" title=""></p>
+            <div class="drop-menu drop-menu_noAuth">
               <h2 class="drop-menu__title">Profile</h2>
               <div class="drop-menu__line"></div>
               <nav class="menu">
-                <p class="menu__item profile-button_login">Log In</p>
-                <p class="menu__item profile-button_register">Register</p>
+                <p class="menu__item button button_login">Log In</p>
+                <p class="menu__item button button_register">Register</p>
               </nav>
             </div>
-            <div class="drop-menu drop-menu_register">
-              <h2 class="drop-menu__title">Profile</h2>
+            <div class="drop-menu drop-menu_auth">
+              <h2 class="drop-menu__title" id="title-card-number">Profile</h2>
               <div class="drop-menu__line"></div>
               <nav class="menu">
-                <p class="menu__item">My profile</p>
-                <p class="menu__item">Log Out</p>
+                <p class="menu__item button button_myProfile">My profile</p>
+                <p class="menu__item button button_logout">Log Out</p>
               </nav>
             </div>
           </div>
@@ -170,7 +171,7 @@
                   strong, complex protagonist. Not for the faint of heart.
                 </p>
               </div>
-              <button class="button buy-button">Buy</button>
+              <button class="button-border buy-button">Buy</button>
               <div class="book__foto book__foto_dean"></div>
             </li>
             <li class="book">
@@ -186,7 +187,7 @@
                   a beautiful witch.
                 </p>
               </div>
-              <button class="button buy-button">Buy</button>
+              <button class="button-border buy-button">Buy</button>
               <div class="book__foto book__foto_harrison"></div>
             </li>
             <li class="book">
@@ -202,7 +203,7 @@
                   divine significance—an inspired introduction to Dante's main themes.
                 </p>
               </div>
-              <button class="button buy-button">Buy</button>
+              <button class="button-border buy-button">Buy</button>
               <div class="book__foto book__foto_dante"></div>
             </li>
             <li class="book">
@@ -367,7 +368,7 @@
                       />
                     </div>
                   </div>
-                  <button type="submit" class="button find-button">Check the card</button>
+                  <button type="submit" class="button-border find-button">Check the card</button>
                 </form>
               </div>
             </div>
@@ -378,10 +379,10 @@
                 can register a new account
               </p>
               <div class="profile-buttons">
-                <button class="button profile-button profile-button_register">
+                <button class="button profile-button button_register">
                   Sign Up
                 </button>
-                <button class="button profile-button profile-button_login">Log in</button>
+                <button class="button profile-button button_login">Log in</button>
               </div>
             </div>
           </div>
@@ -432,6 +433,72 @@
         </div>
       </footer>
 
+      <div class="profile-form profile-form_type_register">
+        <div class="profile-form__popup">
+          <button
+            class="button close-button opacity"
+            type="button"
+            aria-label="Закрыть окно"
+          ></button>
+          <div class="profile-form__container">
+          <h2 class="form__heading">Register</h2>
+         
+            <form class="form-profile" method="POST" name="form-register">
+              <div class="form-inputs">
+              <label for="firstNameInput" class="profile-label">First name</label>
+              <input
+                id="firstNameInput"
+                class="profile-form__input"
+                type="text"
+                name="first-name"
+                minlength="2"
+                maxlength="30"
+                value=""
+                required
+              />
+              <label for="lastNameInput" class="profile-label">Last name</label>
+              <input
+                id="lastNameInput"
+                class="profile-form__input"
+                type="text"
+                name="last-name"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <label for="email-input" class="profile-label">E-mail</label>
+              <input
+                id="email-input"
+                class="profile-form__input"
+                type="email"
+                name="email"
+                required
+              />
+              <label for="password-input" class="profile-label">Password</label>
+              <input
+                id="password-input"
+                class="profile-form__input"
+                type="password"
+                name="password"
+                minlength="8"
+                maxlength="15"
+                required
+              />
+            </div>
+              <button class="button profile-submit-button register-submit" type="submit">Sign Up</button>
+            </form>
+            <div class="span-text-button">
+                <span class="login-span">Already have an account?</span>
+                <button class="register-button button button_login" type="button">
+                  Login
+                </button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
       <div class="profile-form profile-form_type_login">
         <div class="profile-form__popup">
           <button
@@ -442,6 +509,7 @@
           <div class="profile-form__container">
             <h2 class="form__heading">Login</h2>
             <form class="form-profile" method="POST" name="form-login">
+              <div class="form-inputs">
               <label for="login-input" class="profile-label"
                 >E-mail or readers card</label
               >
@@ -456,7 +524,7 @@
               />
               <label for="password-input" class="profile-label">Password </label>
               <input
-                id="password-input"
+                id="password-register-input"
                 class="profile-form__input"
                 type="password"
                 name="password"
@@ -464,20 +532,19 @@
                 maxlength="15"
                 required
               />
+            </div>
+              <button class="button profile-submit-button login-submit" type="submit">Log In</button>
             </form>
-            <div>
-              <button class="button login-submit" type="submit">Log In</button>
               <div class="span-text-button">
                 <span class="login-span">Don’t have an account?</span>
-                <button class="register-button profile-button_register" type="button">
+                <button class="register-button button button_register" type="button">
                   Register
                 </button>
               </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="./index.js" ></script>
   </body>
 </html>

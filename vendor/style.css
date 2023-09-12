@@ -115,7 +115,29 @@ body {
   z-index: 3;
   cursor: pointer;
   position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
+.icon-profile__text {
+  display: none;
+  z-index: 4;
+  margin: 0;
+  padding: 0;
+  
+  color: #BB945F;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+
+}
+
+
 
 @media screen and (max-width: 1140px) {
   .icon-profile {
@@ -710,9 +732,17 @@ body {
   transition: 0.5s;
 }
 .button:hover {
+  background: #bb945f;
+}
+
+.button-border {
+  transition: 0.5s;
+}
+.button-border:hover {
   border: 1px solid #bb945f;
   background: #bb945f;
 }
+
 .address {
   width: 229px;
   grid-column: 1 / 2;
@@ -1042,9 +1072,9 @@ body {
 }
 .profile-form__container {
   padding: 20px 25px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; */
 }
 .profile-form {
   width: 200px;
@@ -1090,7 +1120,7 @@ body {
 }
 
 .form__heading {
-  margin: 0;
+  margin: 0 0 20px;
   color: #000;
   text-align: center;
   font-family: Forum;
@@ -1103,11 +1133,13 @@ body {
 }
 
 .form-profile {
+ 
+}
+.form-inputs {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
 .profile-label {
   color: #000;
 
@@ -1124,7 +1156,7 @@ body {
   border: 1px solid #bb945f;
   box-sizing: border-box;
 }
-.login-submit {
+.profile-submit-button {
   width: 75px;
   height: 30px;
   color: #0c0c0e;
@@ -1139,7 +1171,22 @@ body {
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   cursor: pointer;
+  margin: 20px 0 0;
 }
+
+.button_disabled {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #000000;
+  opacity: 0.2;
+  cursor: default;
+  color: #000000;
+}
+
+.button_disabled:hover {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: default;
+}
+
 .span-text-button {
   display: flex;
   gap: 10px;
